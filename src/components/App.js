@@ -7,8 +7,9 @@ const App = () => {
   let[pass,setPass]=useState("")
   let[err,setErr]=useState("")
   function change(e){
+    e.preventDefault()
     if(!username || !pass){
-      setErr("Both the username and password required")
+      setErr("Both username and password are required")
     }
   }
   return (
