@@ -9,7 +9,7 @@ const App = () => {
   function change(e){
     e.preventDefault()
     if(!username || !pass){
-      setErr("Both username and password are required")
+      setErr("Both username and password are required.")
     }
   }
   return (
