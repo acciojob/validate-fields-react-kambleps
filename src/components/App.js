@@ -7,7 +7,7 @@ const App = () => {
   let[pass,setPass]=useState("")
   let[err,setErr]=useState("")
   function change(e){
-    if(!name || !pass){
+    if(!username || !pass){
       setErr("Both the username and password required")
     }
   }
@@ -22,4 +22,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
