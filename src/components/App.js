@@ -17,7 +17,7 @@ const App = () => {
     <input type="text" value={name} onChange={(e)=>setName(e.target.value)}> </input>
      <input type="pass" value={pass} onChange={(e)=>setPass(e.target.value)}> </input>
      { err && <p id="errorMessage">{err}</p>
-       <button onClick={change}></button>
+       <button onClick={change}>Login</button>
     </div>
   )
 }
