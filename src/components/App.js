@@ -17,7 +17,8 @@ const App = () => {
         {/* Do not remove the main div */}
     <input type="text" value={username} onChange={(e)=>setUsername(e.target.value)} />
      <input type="password" value={pass} onChange={(e)=>setPass(e.target.value)} />
-      <p id="errorMessage">{err}</p>
+      <p></p>
+{err&&<p id="errorMessage">{err}</p>}
        <button onClick={change}>Login</button>
     </div>
   )
